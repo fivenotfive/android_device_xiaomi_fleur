@@ -48,6 +48,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
+    
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libtinycompress \
+    libtinyxml \
+    tinymix
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
