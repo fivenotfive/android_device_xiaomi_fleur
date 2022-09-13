@@ -38,11 +38,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
     
 # Audio
 PRODUCT_PACKAGES += \
@@ -104,6 +99,19 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
+    libhidltransport.vendor \
+    libhwbinder.vendor
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
