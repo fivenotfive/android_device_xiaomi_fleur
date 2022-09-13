@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
     init.recovery.hardware.rc \
     init.recovery.mt6781.rc 
     
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
