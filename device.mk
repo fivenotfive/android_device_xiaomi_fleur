@@ -121,6 +121,12 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
 PRODUCT_PACKAGES += \
+    libkeymaster4.vendor \
+    libkeymaster4support.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
+
+PRODUCT_PACKAGES += \
     libshim_beanpod
 
 # Lights
@@ -182,6 +188,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.fleur
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
