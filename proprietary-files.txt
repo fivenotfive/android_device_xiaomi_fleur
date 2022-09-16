@@ -1764,9 +1764,7 @@ vendor/lib64/hw/thermal.mt6781.so
 
 # WiFi
 bin/iwpriv
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 
