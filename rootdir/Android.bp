@@ -7,13 +7,6 @@
 // Init scripts
 // Init configuration files
 prebuilt_etc {
-    name: "init.aee.rc",
-    src: "etc/init.aee.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.ago.rc",
     src: "etc/init.ago.rc",
     sub_dir: "init/hw",
@@ -67,6 +60,13 @@ prebuilt_etc {
     src: "etc/init.stnfc.rc",
     sub_dir: "init/hw",
     vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
 }
 
 // fstab
