@@ -1165,7 +1165,6 @@ service mi_thermald /system/vendor/bin/mi_thermald
 	class main
 	user root
 	group system
-	seclabel u:r:mi_thermald:s0
 
 #2019.12.30 tianyajun add pocket mode
 on property:odm.pocket.mode.keygurad.locked=1
@@ -1173,7 +1172,6 @@ on property:odm.pocket.mode.keygurad.locked=1
 
 on property:odm.pocket.mode.keygurad.locked=0
     write /proc/tp_palm 0
-
 
 # FPSGO FBT Game
 on boot
