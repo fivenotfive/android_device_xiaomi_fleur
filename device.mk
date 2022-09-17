@@ -266,11 +266,17 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6781.rc \
     init.recovery.mt6781.sh \
     init.target.rc 
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6781
 
 # Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
