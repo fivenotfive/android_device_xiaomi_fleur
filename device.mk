@@ -336,6 +336,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.0.vendor \
