@@ -298,7 +298,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service-V1-mediatek
 
 # Seccomp
 PRODUCT_COPY_FILES += \
