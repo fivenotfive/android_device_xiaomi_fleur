@@ -145,7 +145,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init.stnfc.rc \
-    init.recovery.hardware.rc \
     init.recovery.mt6781.rc 
     
 # Power
