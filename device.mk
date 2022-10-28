@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libshim_audio
+
+PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyxml \
     tinymix
