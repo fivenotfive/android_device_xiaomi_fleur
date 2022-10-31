@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init.stnfc.rc \
-    init.recovery.mt6781.rc 
+    init.recovery.mt6781.rc \
+    init.recovery.mt6781.sh
     
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6781:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6781
