@@ -146,7 +146,6 @@ PRODUCT_CHARACTERISTICS := default
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6781 \
-    init.aee.rc \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
