@@ -1282,6 +1282,10 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
+# Camera Utils - from fleur-user 12 SP1A.210812.016 V13.0.5.0.SKEIDXM release-keys
+vendor/lib/libmtkcam_stdutils.so
+vendor/lib64/libmtkcam_stdutils.so
+
 # Charger
 bin/kpoc_charger
 boot/ramdisk/system/etc/init/kpoc_charger.rc
@@ -1318,12 +1322,8 @@ vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 # Display-Hardware
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/gralloc.default.so:vendor/lib/hw/gralloc.mt6781.so
 vendor/lib/hw/memtrack.mt6781.so
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/gralloc.default.so:vendor/lib64/hw/gralloc.mt6781.so
 vendor/lib64/hw/hwcomposer.mt6781.so
 vendor/lib64/hw/memtrack.mt6781.so
@@ -1437,6 +1437,12 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mt6781.so
 vendor/lib64/libOpenCL.so
+
+# Graphics - from fleur-user 12 SP1A.210812.016 V13.0.5.0.SKEIDXM release-keys
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
@@ -1707,6 +1713,10 @@ vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 # Thermal-Hardware
 vendor/lib/hw/thermal.mt6781.so
 vendor/lib64/hw/thermal.mt6781.so
+
+# UDF - from fleur-user 12 SP1A.210812.016 V13.0.5.0.SKEIDXM release-keys
+vendor/lib/libudf.so
+vendor/lib64/libudf.so
 
 # WiFi
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
@@ -2284,7 +2294,6 @@ vendor/lib/libthha.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_utils.so
-vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
@@ -2513,7 +2522,6 @@ vendor/lib64/libthha.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtranslator_mapi_v3.0.so
 vendor/lib64/libtranslator_utils.so
-vendor/lib64/libudf.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
