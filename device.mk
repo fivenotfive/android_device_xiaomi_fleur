@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.rosemary
+    android.hardware.light-service.fleur
 
 # Media configs
 PRODUCT_COPY_FILES += \
@@ -328,7 +328,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy.rosemary
+    android.hardware.wifi@1.0-service-lazy.fleur
 
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
