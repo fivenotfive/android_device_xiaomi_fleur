@@ -1,5 +1,27 @@
 # All blobs from fleur-user 11 RP1A.200720.011 V13.0.10.0.RKEMIXM release-keys, unless pinned
 
+# AAL
+vendor/lib/libaal_cust.so
+vendor/lib/libaal_key.so
+vendor/lib/libaal_mtk.so
+vendor/lib/libaalservice.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_mtk.so
+vendor/lib64/libaalservice.so
+
+# APU
+system_ext/lib64/libapuwareapusys.mtk.so
+system_ext/lib64/libapuwareutils.mtk.so
+system_ext/lib64/libapuwarexrp.mtk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
+vendor/lib64/APUWareUtilsServer.so
+vendor/lib64/libapu-frontend.so
+vendor/lib64/libapu-platform.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
+
 # Audio
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -1417,25 +1439,22 @@ vendor/lib64/hw/gps.default.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.beanpod.so
-vendor/lib/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.beanpod.so
-vendor/lib64/hw/gatekeeper.default.so
 
 # Graphics
+-vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml:vendor/etc/vintf/manifest/vendor.mediatek.hardware.gpu@1.0-service.xml
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/egl/libGLES_meow.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/vulkan.mt6781.so
 vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/vulkan.mt6781.so
 vendor/lib64/libOpenCL.so
 
 # Graphics - from fleur-user 12 SP1A.210812.016 V13.0.5.0.SKEIDXM release-keys
