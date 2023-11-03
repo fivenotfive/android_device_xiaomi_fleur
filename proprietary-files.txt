@@ -1688,7 +1688,6 @@ vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_platform.so
 
 # Power-Hardware
--vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
 -vendor/etc/vintf/manifest/power-default.xml
 vendor/lib/hw/power.default.so
 vendor/lib/hw/power.mt6781.so
