@@ -13,6 +13,18 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vendor \
+    product \
+    vbmeta \
+    vbmeta_vendor \
+    vbmeta_system
+    
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a

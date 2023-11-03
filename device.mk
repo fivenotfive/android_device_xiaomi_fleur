@@ -13,6 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
@@ -22,6 +23,9 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -298,7 +302,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-V1-mediatek
+    android.hardware.power-service-mediatek
 
 # Seccomp
 PRODUCT_COPY_FILES += \
